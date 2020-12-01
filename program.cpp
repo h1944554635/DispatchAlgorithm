@@ -1,6 +1,7 @@
 #include "program.h"
 #include "Dispatcher.h"
 #include "FCFS.h"
+#include "FileReader.h"
 
 Program::Program()
 {
@@ -27,9 +28,11 @@ void Program::init()
         //文件读取,存放在Job数组 works中
         this->works =
     */
+    FileReader file_reader;
+    works = file_reader.read_from_file("jobs.txt");
 
     //初始化对象
-    dispatcher = NULL;
+    this->dispatcher = NULL;
 
     switch(n)
     {
@@ -64,5 +67,6 @@ void Program::init()
 
 void Program::run()
 {
-    dispatcher->run();
+    //cout << dispatcher << endl;
+    this->dispatcher->run();
 }

@@ -13,3 +13,8 @@ void Dispatcher::push_to_ready_queue(Job job)
 }
 
 void Dispatcher::run(){}
+
+vector<Job> Dispatcher::get_ready_queue()
+{
+    return ready_queue;
+}

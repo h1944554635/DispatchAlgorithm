@@ -1,1 +1,4 @@
-
+job_name,execute_time,arrive_time,deadline
+A,1,1,1
+B,2,2,2
+C,3,3,3

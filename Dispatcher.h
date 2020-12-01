@@ -19,6 +19,8 @@ public:
 
     void push_to_ready_queue(Job job);//将停止的作业放回就绪队列
 
+    vector<Job> get_ready_queue();
+
     virtual void run() = 0;
 
 };

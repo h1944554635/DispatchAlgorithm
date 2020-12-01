@@ -1,6 +1,7 @@
 #ifndef FCFS_H_INCLUDED
 #define FCFS_H_INCLUDED
 #include "Dispatcher.h"
+#include "Job.h"
 
 class FCFS : public Dispatcher
 {
