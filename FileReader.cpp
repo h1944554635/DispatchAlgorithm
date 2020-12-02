@@ -46,7 +46,7 @@ vector<Job> FileReader::read_from_file(string filename)
             cout << field_names[i] << " ";
         }
         */
-        cout << endl;
+        //cout << endl;
         /*
                 for(unsigned long long i = 0; i < fields.size(); i++)
                 {
@@ -151,6 +151,10 @@ Job FileReader::init_job(vector<string> field_names, vector<string> fields)
             {
                 //cout << "set cycle" << endl;
                 job.set_cycle(stoi(fields[i]));
+            }
+            else if(field_names[i].compare("priority") == 0)
+            {
+                job.set_priority(stoi(fields[i]));
             }
         }
         catch(...)

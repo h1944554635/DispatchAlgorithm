@@ -112,3 +112,14 @@ void Job::set_deadline(int deadline)
 {
     this->deadline = deadline;
 }
+
+int Job::get_priority()
+{
+    return priority;
+}
+
+void Job::set_priority(int priority)
+{
+    this->priority = priority;
+}
+

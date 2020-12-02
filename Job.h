@@ -16,6 +16,8 @@ private:
     int finish_time;
     int cycle;
     int deadline;
+    int priority;
+
 
 public:
     /*
@@ -57,6 +59,10 @@ public:
     int get_remain_time();
 
     void set_remain_time(int time);
+
+    int get_priority();
+
+    void set_priority(int priority);
 
 
 };
