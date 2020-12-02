@@ -4,6 +4,8 @@
 #include "Job.h"
 #include <algorithm>
 
+using namespace std;
+
 class FCFS : public Dispatcher
 {
 private:
@@ -11,6 +13,7 @@ private:
 public:
 
     FCFS(vector<Job> works);
+
 
     void sort_arrive_time(vector<Job> &ready_queue);
 

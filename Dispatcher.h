@@ -22,7 +22,6 @@ public:
     vector<Job> get_ready_queue();
 
     virtual void run() = 0;
-
 };
 
 #endif // DISPATCHER_H_INCLUDED

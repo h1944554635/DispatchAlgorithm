@@ -1,5 +1,4 @@
 #include "FCFS.h"
-#include <algorithm>
 
 FCFS::FCFS(vector<Job> works)
 {
@@ -46,7 +45,6 @@ void FCFS::run()
 {
     vector<Job> ready_queue = get_ready_queue();
     sort(ready_queue.begin(), ready_queue.end(),Cmp);
-
     cout << "FCFS" << endl;
     for(int i = 0; i < ready_queue.size(); i++)
     {

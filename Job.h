@@ -17,6 +17,7 @@ private:
     int cycle;
     int deadline;
     float HRR;
+    int priority;
 
 public:
     /*
@@ -62,6 +63,10 @@ public:
     float get_HRR();
 
     void set_HRR(float HRR);
+
+    int get_priority();
+
+    void set_priority(int priority);
 
 
 };

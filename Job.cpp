@@ -48,6 +48,7 @@ int Job::get_arrive_time()
     return arrive_time;
 }
 
+
 void Job::set_arrive_time(int time)
 {
     this->arrive_time = time;
@@ -122,3 +123,13 @@ void Job :: set_HRR(float HRR)
 {
     this->HRR = HRR;
 }
+int Job::get_priority()
+{
+    return priority;
+}
+
+void Job::set_priority(int priority)
+{
+    this->priority = priority;
+}
+
