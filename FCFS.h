@@ -14,9 +14,6 @@ public:
 
     FCFS(vector<Job> works);
 
-
-    void sort_arrive_time(vector<Job> &ready_queue);
-
     static bool Cmp( Job a,  Job b);
 
     void run();

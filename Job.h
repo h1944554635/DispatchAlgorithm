@@ -18,6 +18,7 @@ private:
     int deadline;
     float HRR;
     int priority;
+    int start_time;
 
 public:
     /*
@@ -26,6 +27,8 @@ public:
     Job(string name, int execute_time,int arrive_time,  int deadline);
     Job(string name, int execute_time,int arrive_time,  int deadline, int cycle);
     */
+    int isfinished;
+    int used_time;
 
 
     string get_name();
@@ -67,6 +70,10 @@ public:
     int get_priority();
 
     void set_priority(int priority);
+
+    int get_start_time();
+
+    void set_start_time(int time);
 
 
 };

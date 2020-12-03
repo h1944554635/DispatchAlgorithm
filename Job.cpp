@@ -133,3 +133,13 @@ void Job::set_priority(int priority)
     this->priority = priority;
 }
 
+int Job :: get_start_time()
+{
+    return start_time;
+}
+
+void Job :: set_start_time(int time)
+{
+    this->start_time = time;
+}
+

@@ -14,7 +14,7 @@ public:
 
     //void open_file(string filename);
 
-    void write_to_file(string filename, string info);
+    void write_to_file();
 };
 
 

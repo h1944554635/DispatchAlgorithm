@@ -1,5 +1,10 @@
 #include "Dispatcher.h"
 #include "FCFS.h"
+#include "SJF.h"
+#include "HRRN.h"
+#include "NPP.h"
+#include "SPF.h"
+#include "SRT.h"
 
 
 void Dispatcher::init_works(vector<Job> works)

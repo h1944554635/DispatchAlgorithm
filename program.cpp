@@ -3,6 +3,9 @@
 #include "FCFS.h"
 #include "SJF.h"
 #include "HRRN.h"
+#include "NPP.h"
+#include "SPF.h"
+#include "SRT.h"
 #include "FileReader.h"
 
 Program::Program()
@@ -20,7 +23,7 @@ void Program::input()
     cout << "       2. SJF(短作业优先)                   7. SRT(最短剩余时间优先-抢占)" << endl;
     cout << "       3. HRRN(高响应比优先)                8. RR-4(时间片轮转调度)" << endl;
     cout << "       4. 非抢占式优先级                    9. EDF(最早截止时间优先-非抢占)" << endl;
-    cout << "       5. 抢占式优先级                      10. LLF(最低松弛度优先-抢占)" << endl;
+    cout << "       5. 抢占式优先级                 10. LLF(最低松弛度优先-抢占)" << endl;
     cout << "      *********                 11. 银行家算法                  ***********" << endl;
     cout << endl;
     cout << "请输入要测试的调度算法序号: ";
@@ -58,15 +61,18 @@ void Program::init()
 
         break;
     case 4:
+        dispatcher = new NPP(works);
 
         break;
     case 5:
 
         break;
     case 6:
+        dispatcher = new SPF(works);
 
         break;
     case 7:
+        dispatcher = new SRT(works);
 
         break;
     default:
